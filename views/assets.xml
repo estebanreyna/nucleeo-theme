@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Copyright 2016, 2019 Openworx.
+    @author Mario Gielissen <mario@openworx.nl>
+    License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl.html).
+-->
+
+<odoo>
+    <data>
+		<template id="assets_backend" name="Nucleeo Backend Theme" inherit_id="web.assets_backend">
+		<xpath expr=".">
+                <link rel="stylesheet" href="/nucleeo-theme/static/src/scss/colors.scss"/>
+                <link rel="stylesheet" href="/nucleeo-theme/static/src/scss/style.scss"/>
+                <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet"/>
+                <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&amp;display=swap" rel="stylesheet"/>
+			</xpath>
+		</template>
+    </data>
+</odoo>

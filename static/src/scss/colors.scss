@@ -1,0 +1,46 @@
+$primary_accent: #133cff !default;
+/*$secondary_accent: #334332 !default;*/
+$secondary_accent: #f5f5f5 !default;
+$inverse_accent: #ffffff !default;
+$o-kanban-color-border-width: 8px;
+$selected_row: #ffffff !default;
+$bg_white: #ffffff !default;
+$f_color: rgb(241, 241, 241) !default;
+$bg_darken: #24292e !default;
+$primary_hover: #1235da !default;
+$secondary_hover: #f2f2f2;
+
+
+
+$brand-primary: $primary_accent;
+$brand-secondary: $secondary_accent;
+
+// primary Colors
+
+$o-community-color: #133cff;
+$o-enterprise-color: #875A7B;
+$o-enterprise-primary-color: #00A09D;
+
+$o-brand-odoo: $o-community-color;
+$o-brand-primary: $o-community-color;
+
+$o-brand-secondary: #f0eeee;
+$o-brand-lightsecondary: #e2e2e0;
+$o-gray-100: #f8f9fa; // This is BS default
+
+$o-main-color-muted: #a8a8a8;
+$o-main-text-color: #4c4c4c;
+
+$o-view-background-color: white;
+$o-shadow-color: #303030;
+
+$o-form-lightsecondary: #ccc;
+
+$o-list-footer-bg-color: #eee;
+$o-list-footer-font-weight: bold;
+
+$o-tooltip-background-color: black;
+$o-tooltip-color: white;
+$o-tooltip-arrow-color: black;
+$o-tooltip-text-color: #777777;
+$o-tooltip-title-text-color: #4c4c4c;

@@ -2017,10 +2017,15 @@ div.dropdown-menu.bootstrap-datetimepicker-widget{
 
 
 @media (min-width: 992px) and (max-width: 1533.98px){
-    /*.o_form_view .oe_button_box, .o_form_view .o_notebook > .o_notebook_headers{
+    .o_form_view .oe_button_box, .o_form_view .o_notebook > .o_notebook_headers{
         margin-left: -16px !important;
         margin-right: -16px !important;
-    }*/
+
+        > .nav.nav-tabs {
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+    }
 }
 
 .o_form_view .o_field_widget.o_field_one2many > div, .o_form_view .o_field_widget.o_field_many2many > div {
