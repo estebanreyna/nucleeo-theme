@@ -1072,7 +1072,7 @@ th.o_list_record_selector {
 }
 .o_form_view .o_form_sheet_bg > .o_form_sheet {
     min-width: 650px;
-    max-width: initial;
+    max-width: -webkit-fill-available;
     min-height: 330px;
     border: 1px solid #c8c8d3;
     box-shadow: none !important;
