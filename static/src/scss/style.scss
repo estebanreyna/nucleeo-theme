@@ -488,32 +488,37 @@ background: $bg_darken !important;
     font-size: 16px !important;
 }
 .o_main_navbar {
-  height: 62px;
-  //display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 0px solid #5f5e97 !important;
-  -webkit-box-shadow: 0 0.75rem 1.5rem rgba(18,38,63,.03) !important;
-  box-shadow: 0 0.75rem 1.5rem rgba(18,38,63,.03) !important;
-  background-color: #24292e !important;
-  color: #fff !important;
-
-  & .o_menu_brand {
-        line-height: 62px;
-        font-weight: 600;
-
-        &:hover {
-            background: $bg_darken !important;
-        }
-  }
-
-  & > a, & > button {
     height: 62px;
-  }
+    //display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0px solid #5f5e97 !important;
+    -webkit-box-shadow: 0 0.75rem 1.5rem rgba(18,38,63,.03) !important;
+    box-shadow: 0 0.75rem 1.5rem rgba(18,38,63,.03) !important;
+    background-color: #24292e !important;
+    color: #fff !important;
 
-  .dropdown-menu.show {
-        max-height: calc(100vh - 62px);
-        border-radius: 6px;
+    & .o_menu_brand {
+            line-height: 62px;
+            font-weight: 600;
+
+            &:hover {
+                background: $bg_darken !important;
+            }
+    }
+
+    & > a, & > button {
+        height: 62px;
+    }
+
+    .dropdown-menu.show {
+            max-height: calc(100vh - 62px);
+            border-radius: 6px;
+        }
+    .o_menu_apps {
+        .dropdown-menu {
+            border-radius: 0px;
+        }
     }
 }
 
