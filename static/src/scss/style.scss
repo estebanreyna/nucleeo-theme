@@ -519,6 +519,10 @@ background: $bg_darken !important;
         .dropdown-menu {
             border-radius: 0px;
             top: 62px !important;
+
+            .search-container .search-input .input-group .form-control {
+                margin-bottom: 0px !important;
+            }
         }
     }
 }
@@ -678,6 +682,7 @@ background: $bg_darken !important;
 // Button
 .btn {
     display: inline-block;
+    text-transform: uppercase;
     font-weight: 400 !important;
     line-height: 1 !important;
     color: #495057;
@@ -1412,8 +1417,8 @@ select {
 	background-color: #535e69;
 }
 ::-webkit-scrollbar {
-	width: 6px;
-    height: 6px;
+	width: 8px;
+    height: 8px;
 	background-color: transparent;
 }
 ::-webkit-scrollbar-thumb {
