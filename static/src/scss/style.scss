@@ -518,6 +518,7 @@ background: $bg_darken !important;
     .o_menu_apps {
         .dropdown-menu {
             border-radius: 0px;
+            top: 62px !important;
         }
     }
 }
@@ -2430,4 +2431,8 @@ a.btn.btn-primary.dropdown-toggle {
 
 .o_form_view .o_form_statusbar > .o_statusbar_status > .o_arrow_button.btn-primary.disabled:after {
     border-left-color: #133cff;
+}
+
+.input-group {
+    align-items: center;
 }
