@@ -2250,13 +2250,13 @@ div.o_input > .o_input {
     }
 
     html .o_web_client .o_action_manager .o_action .o_content {
-        overflow: scroll;
+        overflow: overlay;
     }
     .o_statusbar_buttons.dropdown-menu.show {
-        //min-width: calc(100vw - 38px);
-        //transform: translate3d(0px, 45px, 0px) !important;
-        //padding: 2rem 1rem;
-        min-width: 100vw;
+        min-width: calc(100vw - 38px);
+        transform: translate3d(0px, 42px, 0px) !important;
+        padding: 2rem 1rem;
+        /*min-width: 100vw;
         min-height: 100vh;
         position: fixed !important;
         left: 0 !important;
@@ -2266,6 +2266,7 @@ div.o_input > .o_input {
         margin-top: 0;
         background: #000000ed;
         border-radius: 0px !important;
+        border: none;*/
     }
 }
 @media (max-width:480px) {
