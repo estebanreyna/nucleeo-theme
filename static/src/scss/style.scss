@@ -516,16 +516,21 @@ background: $bg_darken !important;
     }
 
     .dropdown-menu.show {
-            max-height: calc(100vh - $navbar-height);
+            max-height: calc(100vh - #{$navbar-height});
             border-radius: 6px;
         }
     .o_menu_apps {
         .dropdown-menu {
-            border-radius: 0px;
+            border-radius: 0px !important;
             top: $navbar-height !important;
 
-            .search-container .search-input .input-group .form-control {
-                margin-bottom: 0px !important;
+            .search-container .search-input .input-group {
+                background-color: rgb(36 41 46 / 20%);
+                box-shadow: none;
+
+                .form-control {
+                    margin-bottom: 0px !important;
+                }
             }
         }
     }
