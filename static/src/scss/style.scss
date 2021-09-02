@@ -457,6 +457,10 @@ textarea, select, .o_form_view.o_form_editable .o_form_field_many2manytags,
 
 //code theme
 
+$navbar-height: 62px;
+
+
+
 //Top Bar
 body {
     font-family: 'Inter', sans-serif !important;
@@ -488,7 +492,7 @@ background: $bg_darken !important;
     font-size: 16px !important;
 }
 .o_main_navbar {
-    height: 62px;
+    height: $navbar-height;
     //display: flex;
     justify-content: space-between;
     align-items: center;
@@ -499,7 +503,7 @@ background: $bg_darken !important;
     color: #fff !important;
 
     & .o_menu_brand {
-            line-height: 62px;
+            line-height: $navbar-height;
             font-weight: 600;
 
             &:hover {
@@ -508,17 +512,17 @@ background: $bg_darken !important;
     }
 
     & > a, & > button {
-        height: 62px;
+        height: $navbar-height;
     }
 
     .dropdown-menu.show {
-            max-height: calc(100vh - 62px);
+            max-height: calc(100vh - $navbar-height);
             border-radius: 6px;
         }
     .o_menu_apps {
         .dropdown-menu {
             border-radius: 0px;
-            top: 62px !important;
+            top: $navbar-height !important;
 
             .search-container .search-input .input-group .form-control {
                 margin-bottom: 0px !important;
@@ -548,10 +552,10 @@ background: $bg_darken !important;
     color: $f_color !important;
 }
 .o_main_navbar > ul > li > a, .o_main_navbar > ul > li > label {
-    height: 62px;
+    height: $navbar-height;
     padding: 0 8px;
     color: $f_color !important;
-    line-height: 62px;
+    line-height: $navbar-height;
     font-weight: 500;
 }
 .o_main_navbar > .o_menu_sections > li > a:hover, .o_main_navbar > .o_menu_systray > li > a:hover, .o_main_navbar > .o_menu_sections > li.show > a, .o_main_navbar > .o_menu_systray > li.show > a {
@@ -1108,6 +1112,7 @@ th.o_list_record_selector {
     display: -webkit-flex;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-left: 15px;
     padding-right: 15px;
     border-bottom: 1px solid #ddd !important;
@@ -2224,6 +2229,34 @@ div.o_input > .o_input {
         text-align: right;
         display: flex;
     }
+    .o_main_navbar > ul.o_menu_systray > li .dropdown-menu.show {
+        border: none;
+        position: fixed;
+        top: $navbar-height;
+    }
+    .o_main_navbar .o_menu_sections.show > li, .o_main_navbar .o_menu_sections.show .o_menu_entry_lvl_1, .o_main_navbar .o_menu_sections.show .o_menu_header_lvl_1 {
+        background-color: $bg_darken;
+        color: #fff;
+    }
+    .o_main_navbar .o_menu_sections.show {
+        height: calc(100vh - $navbar-height);
+        top: $navbar-height !important;
+
+        .show .dropdown-menu {
+            margin-left: 0px;
+            min-width: auto;
+            width: calc(100vw - 40px);
+        }
+    }
+
+    html .o_web_client .o_action_manager .o_action .o_content {
+        overflow: scroll;
+    }
+    .o_statusbar_buttons.dropdown-menu.show {
+        min-width: calc(100vw - 38px);
+        transform: translate3d(0px, 45px, 0px) !important;
+        padding: 2rem 1rem;
+    }
 }
 @media (max-width:480px) {
     ul.o_menu_apps {
@@ -2293,7 +2326,7 @@ div.o_input > .o_input {
     .o_statusbar_status.o_field_widget.o_readonly_modifier {
         width: auto;
         justify-content: flex-end;
-        margin-top: 5px;
+        //margin-top: 5px;
     }
     .o_form_view .o_form_statusbar > .o_statusbar_buttons > .btn {
         margin: 1px 0px 4px 0;
@@ -2325,9 +2358,9 @@ div.o_input > .o_input {
     .o_field_widget.o_field_image .o_form_image_controls > .fa.o_select_file_button {
         background: #74788d;
     }
-    .o_menu_sections, .o_menu_systray, .o_web_client > header {
+    /*.o_menu_sections, .o_menu_systray, .o_web_client > header {
         background: $bg_white !important;
-    }
+    }*/
 
     //ajuste de searchview movil
     .o_searchview .o_searchview_input_container {
