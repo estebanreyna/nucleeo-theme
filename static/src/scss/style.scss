@@ -591,9 +591,9 @@ background: $bg_darken !important;
 
 .o_searchview {
     border: 1px solid #ffffff;
-    // height: 42px;
+    height: 42px;
     padding-left: 12px;
-    // padding-right: 40px;
+    padding-right: 42px;
     -webkit-box-shadow: 0 0 17px -12px #b9bfc5;
     box-shadow: 0 0 17px -12px #b9bfc5;
     border-radius: 7px;
@@ -878,6 +878,7 @@ button.fa.fa-external-link.btn.btn-secondary.o_external_button {
     margin-right: 3px;
     background: transparent !important;
     border: none;
+    padding: 0.375rem 0.75rem !important;
 }
 .o_Composer_actionButton.o-last.o-has-current-partner-avatar.o-composer-is-compact {
     height: 48px !important;
