@@ -2253,9 +2253,19 @@ div.o_input > .o_input {
         overflow: scroll;
     }
     .o_statusbar_buttons.dropdown-menu.show {
-        min-width: calc(100vw - 38px);
-        transform: translate3d(0px, 45px, 0px) !important;
-        padding: 2rem 1rem;
+        //min-width: calc(100vw - 38px);
+        //transform: translate3d(0px, 45px, 0px) !important;
+        //padding: 2rem 1rem;
+        min-width: 100vw;
+        min-height: 100vh;
+        position: fixed !important;
+        left: 0 !important;
+        top: 0 !important;
+        transform: none !important;
+        padding: 19rem 1rem;
+        margin-top: 0;
+        background: #000000ed;
+        border-radius: 0px !important;
     }
 }
 @media (max-width:480px) {
