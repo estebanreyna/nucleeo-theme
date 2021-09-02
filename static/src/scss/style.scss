@@ -637,6 +637,11 @@ background: $bg_darken !important;
             color: #ffffff;
         }
     }
+    .o_searchview_facet_label {
+        background-color: $brand-primary;
+        font-weight: 600;
+        height: 100%;
+    }
 }
 .o_cp_bottom_right  span.o_dropdown_title {
     color: #555b6d;
@@ -682,7 +687,7 @@ background: $bg_darken !important;
 // Button
 .btn {
     display: inline-block;
-    text-transform: uppercase;
+    //text-transform: uppercase;
     font-weight: 400 !important;
     line-height: 1 !important;
     color: #495057;
@@ -2019,7 +2024,7 @@ div.dropdown-menu.bootstrap-datetimepicker-widget{
     margin: 1px 3px 0 0;
     max-width: 100%;
     position: relative;
-    height: 24px !important;
+    height: 26px !important;
     justify-content: center !important;
     align-items: center !important;
 }
@@ -2465,4 +2470,9 @@ a.btn.btn-primary.dropdown-toggle {
 // divisor chatter y mailer
 .o_mail_thread .o_thread_date_separator .o_thread_date, .o_mail_activity .o_thread_date_separator .o_thread_date {
     background: $bg_light;
+}
+
+// redondear esquinas de dropdown menus
+.dropdown-menu {
+    border-radius: 6px !important;
 }
