@@ -655,7 +655,7 @@ background: $bg_darken !important;
 .o_control_panel {
     border-bottom: none important;
     margin: 0px;
-    background-color: #f9fafb !important;
+    background-color: $bg_light !important;
     -webkit-box-shadow: 0 0.6rem 1.5rem rgba(18,38,63,.07) !important;
     box-shadow: 0 0.6rem 1.5rem rgba(18,38,63, .07) !important;
     border-radius: 0px;
@@ -837,8 +837,8 @@ button[name="action_uninstall"]:focus {
     color: #fff !important;
 }
 .o_cp_bottom_right .btn-secondary {
-    background: #f9fafb  !important;
-    border-color: #f9fafb  !important;
+    background: $bg_light  !important;
+    border-color: $bg_light  !important;
     margin-right: 5px !important;
     padding : 6px 8px !important;
 }
@@ -1076,7 +1076,7 @@ th.o_list_record_selector {
 .o_form_view .o_form_sheet_bg {
     border-bottom: none;
     /*background: #ffffff !important;*/
-    background: #f9fafb !important;
+    background: $bg_light !important;
     box-shadow: none !important;
     border-radius: 5px;
     /*padding: 10px;*/
@@ -1106,7 +1106,7 @@ th.o_list_record_selector {
     padding-right: 15px;
     border-bottom: 1px solid #ddd !important;
     border-top: 1px solid #ddd;
-    background-color: #f9fafb;
+    background-color: $bg_light;
     /*background-color: transparent;*/
     border-radius: 0px;
 }
@@ -1172,6 +1172,25 @@ th.o_list_record_selector {
 // Discuss End
 
 //Chatter @form
+
+.o_chatter {
+    .o_chatter_topbar {
+        .btn {
+            border-radius: 4px 4px 0 0 !important;
+            @media (max-width: 1200px) {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+.o_thread_composer .o_composer .btn.fa {
+    background: transparent !important;
+}
+.o_thread_composer .o_composer textarea, .o_thread_composer .o_composer input, .o_thread_composer .o_composer_subject textarea, .o_thread_composer .o_composer_subject input {
+    border: none !important;
+}
+
 .o_FormRenderer_chatterContainer {
     max-width: initial;
     margin-top: 15px !important;
@@ -1908,7 +1927,7 @@ div.o_boolean_toggle.custom-control.custom-checkbox > label.custom-control-label
     text-transform: uppercase;
 }
 .o_main_navbar > ul > li.o_extra_menu_items.show > ul > li > a.dropdown-toggle {
-    background-color: #f9fafb;
+    background-color: $bg_light;
     color: #24292e;
     font-weight: 800;
     text-transform: none;
@@ -2398,7 +2417,7 @@ div.o_input > .o_input {
     width: 8px !important;
 }
 .breadcrumb {
-    background-color: #f9fafb;
+    background-color: $bg_light;
 }
 .o_form_view .oe_avatar > img {
     max-width: 90px;
@@ -2440,4 +2459,9 @@ a.btn.btn-primary.dropdown-toggle {
 
 .input-group {
     align-items: center;
+}
+
+// divisor chatter y mailer
+.o_mail_thread .o_thread_date_separator .o_thread_date, .o_mail_activity .o_thread_date_separator .o_thread_date {
+    background: $bg_light;
 }
